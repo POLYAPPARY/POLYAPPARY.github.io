@@ -1,0 +1,147 @@
+body{
+    background:#A300A9;
+    font-family:Helvetica;
+    color: #EFC7F0;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-input{
+    height: 85px;
+    width:250px;
+    background-color: #E40049;
+    border:hidden;
+    border-radius: 100px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: #88002B 3px 3px,
+        #EE437A -3px -3px;
+    transition: background-color;
+    padding-top:15px
+}
+
+button{
+    margin-top:30px;
+    height: 85px;
+    width:250px;
+    background-color: #E40049;
+    border:hidden;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: #88002B 3px 3px,
+        #EE437A -3px -3px;
+    transition: background-color,
+        color;
+
+    padding:10px;
+    font-size: 20px;
+    color:#FACFDD;
+}
+button:hover{
+    background-color:#FACFDD;
+    color:#E40049;
+}
+
+.file-input:hover{
+    background-color:#FACFDD
+}
+
+.options{ /*option container*/
+    overflow: hidden;
+    width:100%;
+    margin:auto;
+    padding-bottom: 15px;
+}
+
+.option{
+    height:10px;
+    padding-top: 30px;
+    transition: height 0.4s;
+    background: #4F09B0;
+    width:30%;
+    border-radius: 10px;
+    margin:auto;
+    margin-top: 10px;
+    overflow:auto;
+    box-shadow:#2C0468 5px 10px,
+        #8047CF -5px -10px;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.option::-webkit-scrollbar {
+    display: none;
+  }
+
+.option:hover{
+    height:210px;
+}
+p{
+    margin:20px;
+    color:#DBCBF1;
+    font-family: Cambria;
+    font-size: 18px;
+}
+
+
+.foot{
+    color:#FACFDD;
+    background-color: #A300A9;
+    height:6vh;
+    bottom:0;
+    position: fixed;
+    width: 20%;
+    left:50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 10px;
+    transition: width 2s ease -.3s, 
+        background-color 3s ease -0.5s;
+}
+
+.foot:hover{
+    width: 105%;
+    background-color: #610064;
+}
+
+.me{
+    margin-top: 10px;
+    color:#FACFDD;
+}
+
+.left{
+    text-align: left;
+}
+
+h2{
+    font-size: 20px;
+    text-shadow: #610064 3px 3px 5px;
+}
+
+h1{
+    text-shadow: #0D000D 4px 4px 10px;
+}
+
+a:visited{
+    color: inherit;
+} /* prevent link color from changing */
+a{
+    color:#EFC7F0;
+}
+
+/*MOBILE MODS:*/
+@media (pointer:none), (pointer:coarse) {
+    .option{
+        width:85%;
+    }
+    .foot{
+        width:70%;
+        height: 10%;
+        background-color: #610064;
+        margin-bottom: 10px;
+        z-index: -1;
+    }
+}
