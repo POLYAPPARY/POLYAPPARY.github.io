@@ -144,4 +144,7 @@ a{
         margin-bottom: 10px;
         z-index: -1;
     }
+    .mobile-notice::before{
+        content:"hey! We think you're on mobile. If so, don't worry, the site is functional. Just be aware that you may have to hold press, rather than tap."
+    }
 }
