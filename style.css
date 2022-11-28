@@ -77,7 +77,7 @@ button:hover{
     display: none;
   }
 
-.option:hover{
+.option:hover, .option:active{
     height:210px;
 }
 p{
